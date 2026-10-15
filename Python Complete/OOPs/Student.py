@@ -1,11 +1,15 @@
-class father:
-    def skill(self):
-        print("Father's skill is gaurdening")
-class mother:
-    def skill2(self):
-        print("Mother's skill is cooking")
-class son(father, mother):
-    def skill3(self):
-        print("Son skill is sports")
-s = son()
-s.skill2()    
+class Student:
+    def __init__(self, stu_name, english_marks, math_marks, science_marks):
+        self.stu_name = stu_name
+        self.english = english_marks
+        self.math = math_marks
+        self.science = science_marks
+
+    def display(self):
+        print(f"Student Name: {self.stu_name}")
+        print(f"English Marks: {self.english}")
+        print(f"Math Marks: {self.math}")
+        print(f"Science Marks: {self.science}")
+
+student1 = Student("Alice", 85, 90, 78)
+student1.display()
